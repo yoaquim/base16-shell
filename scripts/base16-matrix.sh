@@ -3,7 +3,7 @@
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 # Green Screen scheme by Chris Kempson (http://chriskempson.com)
 
-color00="10/10/10" # Base 00 - Black (Background)
+color00="00/00/00 # Base 00 - Black (Background)
 color01="00/ff/00" # Base 08 - Red (It's actually green here)
 color02="00/ff/00" # Base 0B - Green
 color03="00/ff/00" # Base 0A - Yellow (Also green)
@@ -26,7 +26,7 @@ color19="30/30/30" # Base 02
 color20="40/40/40" # Base 04
 color21="50/50/50" # Base 06
 color_foreground="00/ff/00" # Base 05 - Foreground (Text)
-color_background="10/10/10" # Base 00 - Background
+color_background="00/00/00" # Base 00 - Background
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -79,7 +79,7 @@ put_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   put_template_custom Pg 00bb00 # foreground
-  put_template_custom Ph 001100 # background
+  put_template_custom Ph 000000 # background
   put_template_custom Pi 00bb00 # bold color
   put_template_custom Pj 005500 # selection color
   put_template_custom Pk 00bb00 # selected text color
