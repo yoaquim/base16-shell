@@ -3,30 +3,30 @@
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 # Cyberpunk  scheme by Yoaquim Cintron (https://yoaquim.com)
 
-color00="2f/1e/2e" # Base 00 - Black
-color01="ff/79/c6" # Base 08 - Red (Muted Neon Pink)
-color02="8b/e9/fd" # Base 0B - Green (Muted Neon Blue)
-color03="f1/fa/8c" # Base 0A - Yellow (Muted Neon Yellow)
-color04="bd/93/f9" # Base 0D - Blue (Muted Neon Purple)
-color05="ff/b8/6c" # Base 0E - Magenta (Muted Neon Orange)
-color06="50/fa/7b" # Base 0C - Cyan (Muted Neon Green)
-color07="f8/f8/f2" # Base 05 - White (Light Grey)
-color08="62/70/83" # Base 03 - Bright Black (Dark Grey)
-color09=$color01 # Base 08 - Bright Red
-color10=$color02 # Base 0B - Bright Green
-color11=$color03 # Base 0A - Bright Yellow
-color12=$color04 # Base 0D - Bright Blue
-color13=$color05 # Base 0E - Bright Magenta
-color14=$color06 # Base 0C - Bright Cyan
-color15="ff/ff/ff" # Base 07 - Bright White
-color16="ff/55/55" # Base 09 (Muted Neon Red)
-color17="ff/6e/67" # Base 0F (Muted Neon Coral)
-color18="cc/cc/cc" # Base 01 (Light Grey)
-color19="bb/bb/bb" # Base 02 (Medium Grey)
-color20="aa/aa/aa" # Base 04 (Dark Grey)
-color21="dd/dd/dd" # Base 06 (Lightest Grey)
-color_foreground="ff/79/c6" # Base 05
-color_background="2f/1e/2e" # Base 00
+color00="#392B40" # Base 00 - Black (Background)
+color01="#F235C0" # Base 08 - Red (Also used as Main Text Color)
+color02="#BF4186" # Base 0B - Green
+color03="#8C4566" # Base 0A - Yellow
+color04="#F27289" # Base 0D - Blue
+color05="#BF4186" # Base 0E - Magenta
+color06="#8C4566" # Base 0C - Cyan
+color07="#F235C0" # Base 05 - White
+color08="#392B40" # Base 03 - Bright Black
+color09="#F235C0" # Base 08 - Bright Red
+color10="#BF4186" # Base 0B - Bright Green
+color11="#8C4566" # Base 0A - Bright Yellow
+color12="#F27289" # Base 0D - Bright Blue
+color13="#BF4186" # Base 0E - Bright Magenta
+color14="#8C4566" # Base 0C - Bright Cyan
+color15="#F235C0" # Base 07 - Bright White
+color16="#BF4186" # Base 09
+color17="#8C4566" # Base 0F
+color18="#392B40" # Base 01
+color19="#392B40" # Base 02
+color20="#F235C0" # Base 04
+color21="#F27289" # Base 06
+color_foreground="#F235C0" # Base 05
+color_background="#392B40" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -78,8 +78,8 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg d46a6a # foreground
-  put_template_custom Ph 2f1e2e # background
+  put_template_custom Pg F235C0 # foreground
+  put_template_custom Ph 392B40 # background
   put_template_custom Pi 00bb00 # bold color
   put_template_custom Pj 005500 # selection color
   put_template_custom Pk 00bb00 # selected text color
