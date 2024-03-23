@@ -78,8 +78,8 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg 00bb00 # foreground
-  put_template_custom Ph 000000 # background
+  put_template_custom Pg d46a6a # foreground
+  put_template_custom Ph cdcdcd # background
   put_template_custom Pi 00bb00 # bold color
   put_template_custom Pj 005500 # selection color
   put_template_custom Pk 00bb00 # selected text color
