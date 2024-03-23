@@ -12,7 +12,7 @@ color05="F2/35/C0" # Base 0E - Magenta (Foreground/Main text)
 color06="BF/41/86" # Base 0C - Cyan (Unused, replaced with one of your colors)
 color07="F2/35/C0" # Base 05 - White (Foreground/Main text)
 color08="8C/45/66" # Base 03 - Bright Black
-color09=$color01 # Base 08 - Bright Red
+color09="44/DD/E2" # Secondary Text Color
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
@@ -78,12 +78,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg F235C0 # Foreground
+  put_template_custom Pg F235C0 # Foreground (Main text color)
   put_template_custom Ph 392B40 # Background
-  put_template_custom Pi F235C0 # Bold color
+  put_template_custom Pi 44DDE2 # Bold color (Secondary text color)
   put_template_custom Pj 8C4566 # Selection color
-  put_template_custom Pk F235C0 # Selected text color
-  put_template_custom Pl F235C0 # Cursor
+  put_template_custom Pk 44DDE2 # Selected text color (Secondary text color)
+  put_template_custom Pl 44DDE2 # Cursor (Secondary text color)
   put_template_custom Pm 392B40 # Cursor text
 else
   put_template_var 10 $color_foreground
