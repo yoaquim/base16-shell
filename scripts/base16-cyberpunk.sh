@@ -1,32 +1,32 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# Green Screen scheme by Chris Kempson (http://chriskempson.com)
+# Cyberpunk  scheme by Yoaquim Cintron (https://yoaquim.com)
 
-color00="15/15/15" # Base 00 - Black (Dark Grey)
-color01="ff/00/80" # Base 08 - Pink/Red
-color02="08/f0/00" # Base 0B - Neon Green
-color03="ff/fa/00" # Base 0A - Yellow
-color04="00/80/ff" # Base 0D - Blue
-color05="ff/00/ff" # Base 0E - Magenta
-color06="00/ff/ff" # Base 0C - Cyan
-color07="d0/d0/d0" # Base 05 - Light Gray
-color08="50/50/50" # Base 03 - Dark Gray
-color09="ff/60/70" # Base 09
-color10="c0/ff/00" # Base 0B - Bright Green
-color11="ff/d0/00" # Base 0A - Bright Yellow
-color12="00/b0/ff" # Base 0D - Bright Blue
-color13="ff/60/ff" # Base 0E - Bright Magenta
-color14="50/ff/ff" # Base 0C - Bright Cyan
-color15="ff/ff/ff" # Base 07 - White
-color16="ff/90/00" # Base 09 - Orange
-color17="ff/00/60" # Base 0F - Deep Pink
-color18="28/28/28" # Base 01
-color19="38/38/38" # Base 02
-color20="b0/b0/b0" # Base 04
-color21="e0/e0/e0" # Base 06
-color_foreground="d0/d0/d0" # Base 05
-color_background="15/15/15" # Base 00 - Dark Grey Background
+color00="cd/cd/cd" # Base 00 - Black (Background)
+color01="ff/79/c6" # Base 08 - Red (Muted Neon Pink)
+color02="8b/e9/fd" # Base 0B - Green (Muted Neon Blue)
+color03="f1/fa/8c" # Base 0A - Yellow (Muted Neon Yellow)
+color04="bd/93/f9" # Base 0D - Blue (Muted Neon Purple)
+color05="ff/b8/6c" # Base 0E - Magenta (Muted Neon Orange)
+color06="50/fa/7b" # Base 0C - Cyan (Muted Neon Green)
+color07="f8/f8/f2" # Base 05 - White (Light Grey)
+color08="62/70/83" # Base 03 - Bright Black (Dark Grey)
+color09=$color01 # Base 08 - Bright Red
+color10=$color02 # Base 0B - Bright Green
+color11=$color03 # Base 0A - Bright Yellow
+color12=$color04 # Base 0D - Bright Blue
+color13=$color05 # Base 0E - Bright Magenta
+color14=$color06 # Base 0C - Bright Cyan
+color15="ff/ff/ff" # Base 07 - Bright White
+color16="ff/55/55" # Base 09 (Muted Neon Red)
+color17="ff/6e/67" # Base 0F (Muted Neon Coral)
+color18="cc/cc/cc" # Base 01 (Light Grey)
+color19="bb/bb/bb" # Base 02 (Medium Grey)
+color20="aa/aa/aa" # Base 04 (Dark Grey)
+color21="dd/dd/dd" # Base 06 (Lightest Grey)
+color_foreground="ff/79/c6" # Base 05
+color_background="cd/cd/cd" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
