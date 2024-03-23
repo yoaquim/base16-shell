@@ -3,7 +3,7 @@
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 # Green Screen scheme by Chris Kempson (http://chriskempson.com)
 
-color00="00/00/00 # Base 00 - Black (Background)
+color00="00/00/00" # Base 00 - Black (Background)
 color01="00/ff/00" # Base 08 - Red (It's actually green here)
 color02="00/ff/00" # Base 0B - Green
 color03="00/ff/00" # Base 0A - Yellow (Also green)
