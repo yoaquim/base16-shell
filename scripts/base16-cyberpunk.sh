@@ -3,7 +3,7 @@
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 # Cyberpunk  scheme by Yoaquim Cintron (https://yoaquim.com)
 
-color00="cd/cd/cd" # Base 00 - Black (Background)
+color00="2f/1e/2e" # Base 00 - Black
 color01="ff/79/c6" # Base 08 - Red (Muted Neon Pink)
 color02="8b/e9/fd" # Base 0B - Green (Muted Neon Blue)
 color03="f1/fa/8c" # Base 0A - Yellow (Muted Neon Yellow)
@@ -26,7 +26,7 @@ color19="bb/bb/bb" # Base 02 (Medium Grey)
 color20="aa/aa/aa" # Base 04 (Dark Grey)
 color21="dd/dd/dd" # Base 06 (Lightest Grey)
 color_foreground="ff/79/c6" # Base 05
-color_background="cd/cd/cd" # Base 00
+color_background="2f/1e/2e" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -79,7 +79,7 @@ put_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   put_template_custom Pg d46a6a # foreground
-  put_template_custom Ph cdcdcd # background
+  put_template_custom Ph 2f1e2e # background
   put_template_custom Pi 00bb00 # bold color
   put_template_custom Pj 005500 # selection color
   put_template_custom Pk 00bb00 # selected text color
